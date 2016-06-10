@@ -22,6 +22,16 @@ This generates *domain-out.pddl* and *problem-out.pddl*, the compiled PDDL files
 Optional arguments:
 - --viz: EVMDD visualization for action cost functions
 
+Example:
+- ./compile.py example/domain-sdac.pddl example/prob02.pddl --viz
+
+External tools
+--------
+This compiler uses the following external tools:
+- [Fast Downward translator](http://www.fast-downward.org/)
+- [pyevmdd](https://github.com/robertmattmueller/pyevmdd) as decision diagram library.
+- [SymPy](http://www.sympy.org/de/index.html) to minimize cost function terms.
+
 Copyright
 --------
 
