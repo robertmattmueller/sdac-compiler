@@ -15,7 +15,7 @@ Requirements
 
 Usage
 ----------
-./compile.py <path-to-domainfile> <path-to-problemfile> [--viz] \
+./compile.py *path/to/domainfile* *path/to/problemfile* [--viz]
 This generates *domain-out.pddl* and *problem-out.pddl*, the compiled PDDL files with constant action cost.
 
 Optional arguments:
