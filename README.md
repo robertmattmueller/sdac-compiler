@@ -3,6 +3,8 @@ SDAC-Compiler
 This compiler takes a PDDL problem with state-dependent action costs and generates a PDDL problem with constant costs, based on the action-compilation with edge-valued multi-values decision diagrams (EVMDDs), as described in 
 [*Delete Relaxations for Planning with State-Dependent Action Costs*](http://gki.informatik.uni-freiburg.de/papers/geisser-etal-ijcai2015.pdf).
 
+An example PDDL domain file can be found [here](https://raw.githubusercontent.com/robertmattmueller/sdac-compiler/master/example/domain-sdac.pddl) and the BNF grammar for cost functions can be found [here](https://github.com/robertmattmueller/sdac-compiler/blob/master/documents/bnf.pdf). Note that the compiler currently does not support real numbers and the forall/exists language constructs.
+
 Disclaimer
 ----------
 This project is still in a __very__ early stage and therefore is not stable and bug-free. It is currently built into the translator tool of [Fast Downward](http://www.fast-downward.org/). While we definitely need the translator tool, we plan to decouple the first major version of our compiler. We are currently rewriting most parts of the code and hope to ship the first fully functional version around July.
