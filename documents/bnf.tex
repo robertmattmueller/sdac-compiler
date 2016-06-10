@@ -9,8 +9,8 @@
 
 \begin{document}
 \section*{BNF clauses for state-dependent action costs}
-Most of the syntax is already provided by the PDDL 3.1 language. Only $sum$ and
-$prod$ are new language constructs.
+Most of the syntax is already provided by the PDDL 3.1 language. Only \texttt{sum} and
+\texttt{prod} are new language constructs.
 
 \begin{lstlisting}
 
@@ -43,7 +43,7 @@ $prod$ are new language constructs.
  <predicate>         ::= <name>
  <term>              ::= <name> | <variable>
 
- <name>         ::=  <letter> <any char>$^*$
+ <name>         ::= <letter> <any char>$^*$
  <letter>       ::= a..z | A..Z
  <any char>     ::= <letter> | <digit> | - | _
  <number>       ::= <digit>$^+$ [<decimal>]
