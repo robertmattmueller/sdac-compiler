@@ -5,6 +5,8 @@ This compiler takes a PDDL problem with state-dependent action costs and generat
 
 An example PDDL domain file can be found [here](https://raw.githubusercontent.com/robertmattmueller/sdac-compiler/master/example/domain-sdac.pddl) and the BNF grammar for cost functions can be found [here](https://github.com/robertmattmueller/sdac-compiler/blob/master/documents/bnf.pdf). Note that the compiler currently does not support real numbers and the forall/exists language constructs.
 
+We also have a working plugin for the Planning.Domains editor, thanks to Christian Muise. [This](http://editor.planning.domains/#http://www.haz.ca/tutorial2.js) link immediately loads the compiler plugin and changes the underlying planner to Fast Downward with lm-cut. Note that the online compiler has a **15 seconds timeout**, keep this in mind for complex cost functions.
+
 Disclaimer
 ----------
 This project is still in a __very__ early stage and therefore is not stable and bug-free. It is currently built into the translator tool of [Fast Downward](http://www.fast-downward.org/). While we definitely need the translator tool, we plan to decouple the first major version of our compiler. We are currently rewriting most parts of the code and hope to ship the first fully functional version around July.
